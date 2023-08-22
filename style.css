@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding-bottom: 50px;
+    background-color: antiquewhite;
+    /* Add padding to make space for the footer */
+}
+
+.header {
+    background-color: #8c0e79;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    height: 39px;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 70px auto 20px auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.display-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    max-height: 500px;
+    border-radius: 5px;
+}
+
+.user-details {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-details img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #4CAF50;
+}
+
+.user-info {
+    flex: 1;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-placeholder img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .form-container {
+        padding: 10px;
+    }
+    .display-container {
+        max-height: none;
+    }
+    /* Stacking elements vertically on mobile */
+    .form-container,
+    .display-container {
+        margin-bottom: 20px;
+    }
+}
